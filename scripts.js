@@ -16,7 +16,6 @@ window.addEventListener("load", function(){
   fetch("links.json")
     .then(response => response.json())
       .then(data => {
-        console.log(data.linkItems);
 
         for(let x = 0; x < data.linkItems.length; x++){
 
@@ -31,8 +30,6 @@ window.addEventListener("load", function(){
           // append to link container
           linksContainer.appendChild(createdLink);
         }
-
-
       })
 
   ///////////////
