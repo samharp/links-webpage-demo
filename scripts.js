@@ -1,14 +1,14 @@
 window.addEventListener("load", function(){
 
-  console.log("scripts.js loaded");
+  console.log("links/scripts.js loaded");
 
-  // created link row
+  // newly-created link row
   var createdLink;
 
-  // where the links will go
+  // container where the links will go
   var linksContainer = document.querySelector("[data-links-container]");
 
-  // link template
+  // HTML link template
   var itemTemplate = document.getElementById("link-template");
   var itemTemplateElem = itemTemplate.content.querySelector("[data-link-row]");
 
@@ -19,6 +19,7 @@ window.addEventListener("load", function(){
 
         for(let x = 0; x < data.linkItems.length; x++){
 
+          // get HTML template from document to duplicate for each link
           createdLink = document.importNode(itemTemplateElem, true);
 
           // set innerHTML of label
