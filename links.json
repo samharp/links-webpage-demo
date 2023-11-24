@@ -1,10 +1,12 @@
 {"linkItems": [
   {
     "label": "Portfolio",
-    "href": "https://sammyharper.com"
+    "href": "https://sammyharper.com",
+    "class": "portfolio"
   },
   {
     "label": "Terrabyte",
-    "href": "https://terrabyte.eco"
+    "href": "https://terrabyte.eco",
+    "class": ""
   }
 ]}

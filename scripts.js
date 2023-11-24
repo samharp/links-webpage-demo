@@ -28,6 +28,11 @@ window.addEventListener("load", function(){
           // set href of a tag
           createdLink.href = data.linkItems[x].href;
 
+          // add additional item class (optional)
+          if(data.linkItems[x].class != ""){
+            createdLink.classList.add(data.linkItems[x].class);
+          }
+
           // append to link container
           linksContainer.appendChild(createdLink);
         }
