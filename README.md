@@ -10,13 +10,13 @@ A Linktree-type webpage that is built using HTML, JavaScript, and JSON.
 The included JavaScript looks at the `links.json` file and creates a link element for each JSON object. The JavaScript runs down the list of objects and creates them in order they appear in the JSON. You can move the HTML Template and container wherever you like on the HTML page, as long as they keep their custom attributes (i.e. `data-links-container`, `data-link-row`, etc.).
 
 ## What's included in each link?
-By default, each JSON element contains the link text (`label`) and the link path (`href`). This can be modified to include additional data, such as CSS classes, IDs, custom attributes, and more.
+By default, each JSON element contains the link text (`label`) and the link path (`href`). Optionally, you can include a CSS class name (`class`) as well. This can be modified to include additional data like IDs, custom attributes, and more.
 
 __If additional data is included in JSON, ensure that each object contains the same key-value pair. For example:__
 
 ```
 {"linkItems": [
-  {"label": "Portfolio", "href": "https://sammyharper.com", "style": "portfolio_link"},
-  {"label": "Terrabyte", "href": "https://terrabyte.eco", "style": "terrabyte_link"}
+  {"label": "Portfolio", "href": "https://sammyharper.com", "class": "portfolio_link"},
+  {"label": "Terrabyte", "href": "https://terrabyte.eco", "class": ""}
 ]}
 ```
